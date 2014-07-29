@@ -1,0 +1,53 @@
+div {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.mybackground {
+  background: #ccc;
+}
+
+.mycontent {
+  padding: 0;
+}
+
+div#backfaceframe {
+ background: url(../img/backface.svg);
+}
+
+figure.diagram {
+  width: 58%;
+  max-width: 512px;
+  border: 1px solid #ccc;
+  margin: 0 2px 0 2px;
+  padding: 2px 12px 2px 2px;
+  border-radius: 11px;
+}
+
+figure.diagram img {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 4px;
+  border-radius: 7px 7px 0 0;
+  margin: 0px;
+}
+
+figure.diagram embed {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 4px;
+  border-radius: 7px 7px 0 0;
+  margin: 0px;
+}
+
+figure.diagram figcaption {
+  background-color: #666; color: #fff;
+  font-style: italic;
+  width: 100%;
+  padding: 5px;
+  border-radius: 0 0 8px 8px;
+  margin: 0px;
+}
