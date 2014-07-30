@@ -31,6 +31,10 @@ Abstract
 | --- | --- | --- | --- |
 | _Swiping left to get to..._ | _... choose a card value_ | _Click card to toggle front and back face_ | _Indicating a break and more coffee is appreciated_ |
 
+| <img src="res/acer_android_scrum_poker_installed.png" alt="Successfully installed on Android" width="100%" /> | <img src="res/acer_android_start_icons.png" alt="Start icon on Android desktop" width="100%" /> | <img src="res/acer_android_xxl.png" alt="Estimated to be a really huge task" width="100%" /> | <img src="res/acer_android_coffee_break.png" alt="Indicating a break and more coffee is appreciated" width="100%" /> |
+| --- | --- | --- | --- |
+| _Successfully installed on Android_ | _Start icon on Android desktop_ | _Estimated to be a really huge task_ | _Indicating a break and more coffee is appreciated_ |
+
 In Short
 --------
 
