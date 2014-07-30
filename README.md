@@ -22,6 +22,10 @@ Abstract
   <em>Tasks</em>. It can be used as a replacement for physical <em>SCRUM Planning Poker</em>
   card sets.</p>
   
+| <img src="res/cardview.png" alt="Standard card view" width="100%" /> | <img src="res/cardview_swipe_right.png" alt="Swiping right" width="100%" /> | <img src="res/swiperight-mainmenu.png" alt="Main menu" width="100%" /> | <img src="res/decktypes.png" alt="Main menu" width="100%" /> |
+| --- | --- | --- | --- |
+| _The standard card view_ | _Swiping right to get to..._ | _... the Main menu_ | _Select Deck Type_ |
+
 In Short
 --------
 
