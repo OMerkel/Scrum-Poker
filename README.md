@@ -4,8 +4,9 @@
 Scrum Planning Poker supporting application for various Mobile Operating Systems, Tablets, and Desktop
 
 * _Start an online_ __Scrum Poker__ _session on_ http://omerkel.github.io/Scrum-Poker/html5/src/
+* _also published in_ <a href='https://marketplace.firefox.com/app/scrumpoker'><img alt='Firefox Marketplace' src='res/marketplace_logo.png' width='128' /></a>
 
-__Keywords__ _SCRUM process framework_, _Scrum Poker Cards_, _Planning Poker Card Sets_, _estimation_, _complexity_
+__Keywords__ _SCRUM process framework_, _Scrum Poker Cards_, _Planning Poker Card Sets_, _estimation_, _complexity_, _agile_, _FirefoxOS_, _iOS (iPad / iPod)_, _Android_, _Windows Phone_, _Linux_, _Desktop support_, _offline.appcache_
 
 Abstract
 --------
@@ -22,6 +23,14 @@ Abstract
   <em>Tasks</em>. It can be used as a replacement for physical <em>SCRUM Planning Poker</em>
   card sets.</p>
   
+| <img src="res/cardview.png" alt="The standard card view" width="100%" /> | <img src="res/cardview_swipe_right.png" alt="Swiping right to get to..." width="100%" /> | <img src="res/swiperight-mainmenu.png" alt="... the Main menu" width="100%" /> | <img src="res/decktypes.png" alt="Select Deck Type" width="100%" /> |
+| --- | --- | --- | --- |
+| _The standard card view_ | _Swiping right to get to..._ | _... the Main menu_ | _Select Deck Type_ |
+
+| <img src="res/cardview_swipe_left.png" alt="Swiping left to get to..." width="100%" /> | <img src="res/cardvalues-normal.png" alt="... choose a card value" width="100%" /> | <img src="res/cardbackface.png" alt="Click card to toggle front and back face" width="100%" /> | <img src="res/ineedabreakandmorecoffee.png" alt="Indicating a break and more coffee is appreciated" width="100%" /> |
+| --- | --- | --- | --- |
+| _Swiping left to get to..._ | _... choose a card value_ | _Click card to toggle front and back face_ | _Indicating a break and more coffee is appreciated_ |
+
 In Short
 --------
 
