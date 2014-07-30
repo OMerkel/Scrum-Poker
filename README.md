@@ -5,7 +5,7 @@ Scrum Planning Poker supporting application for various Mobile Operating Systems
 
 * _Start an online_ __Scrum Poker__ _session on_ http://omerkel.github.io/Scrum-Poker/html5/src/
 
-__Keywords__ _SCRUM process framework_, _Scrum Poker Cards_, _Planning Poker Card Sets_, _estimation_, _complexity_, _agile_, _FirefoxOS_, _iOS (iPad / iPod)_, _Android_, _Windows Phone_, _Linux_, _Desktop support_
+__Keywords__ _SCRUM process framework_, _Scrum Poker Cards_, _Planning Poker Card Sets_, _estimation_, _complexity_, _agile_, _FirefoxOS_, _iOS (iPad / iPod)_, _Android_, _Windows Phone_, _Linux_, _Desktop support_, _offline.appcache_
 
 Abstract
 --------
