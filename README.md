@@ -26,7 +26,7 @@ Abstract
 | --- | --- | --- | --- |
 | _The standard card view_ | _Swiping right to get to..._ | _... the Main menu_ | _Select Deck Type_ |
 
-| <img src="res/cardview_swipe_left.png" alt="Swiping left to get to..." width="100%" /> | <img src="res/cardvalues-normal.png.png" alt="... choose a card value" width="100%" /> | <img src="res/cardbackface.png" alt="Click card to toggle front and back face" width="100%" /> | <img src="res/ineedabreakandmorecoffee.png" alt="Indicating a break and more coffee is appreciated" width="100%" /> |
+| <img src="res/cardview_swipe_left.png" alt="Swiping left to get to..." width="100%" /> | <img src="res/cardvalues-normal.png" alt="... choose a card value" width="100%" /> | <img src="res/cardbackface.png" alt="Click card to toggle front and back face" width="100%" /> | <img src="res/ineedabreakandmorecoffee.png" alt="Indicating a break and more coffee is appreciated" width="100%" /> |
 | --- | --- | --- | --- |
 | _Swiping left to get to..._ | _... choose a card value_ | _Click card to toggle front and back face_ | _Indicating a break and more coffee is appreciated_ |
 
