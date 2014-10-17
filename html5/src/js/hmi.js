@@ -6,9 +6,10 @@
 //
 
 function Hmi() {
+  this.showFront = true;
 }
 
-Hmi.prototype.updateCard = function( face ) {
+Hmi.prototype.updateCard = function() {
   var titleHeight = 0,
     menuHeight = 0,
     decorationHeight = titleHeight + menuHeight,
@@ -17,7 +18,7 @@ Hmi.prototype.updateCard = function( face ) {
     cardAspectRatio = 60.0 / 94.0,
     size = Math.min(availableWidth * 0.90, availableHeight * 0.90 * cardAspectRatio),
     offsetY = 10;
-  $(face).css({
+  $('#face').css({
     height: size / cardAspectRatio,
     width: size,
     top: menuHeight + size * 0.02,
@@ -27,19 +28,14 @@ Hmi.prototype.updateCard = function( face ) {
 
 Hmi.prototype.update = function() {
   var deckType = $('#deckselect').val();
-  var cardValue;
-  if ('normal' == deckType) {
-    cardValueMain=$( 'input:radio[name=normal]:checked' ).val();;
-  } else if ('fibonacci' == deckType) {
-    cardValueMain=$( 'input:radio[name=fibonacci]:checked' ).val();;
-  } else {
-    cardValueMain=$( 'input:radio[name=t-shirt]:checked' ).val();;
-  } 
-  this.updateCard('#frontface');
-  this.updateCard('#backface');
-  $('#frontface').css({
-    'background-image' : 'url(img/set1/frontface-' + cardValueMain + '.svg)'
-  });
+  var cardUrl =
+    this.showFront ? 'url(img/set1/frontface-' + (
+      'normal' == deckType ? $( 'input:radio[name=normal]:checked' ).val() :
+      'fibonacci' == deckType ? $( 'input:radio[name=fibonacci]:checked' ).val() :
+      $( 'input:radio[name=t-shirt]:checked' ).val() ) + '.svg)' :
+    'url(img/set1/backface.svg)';
+  this.updateCard();
+  $('#face').css({ 'background-image' : cardUrl });
 };
 
 $( document ).on( "pagecreate", "#cardface", function() {
@@ -68,31 +64,21 @@ $( document ).on( "pagecreate", "#cardface", function() {
             changeHash: false });
       });
     }
-    $( '#frontface' ).on( 'click', function( e ) {
-      $( '#frontface' ).css({
-        visibility : 'hidden',
-      });
-      $( '#backface' ).css({
-        visibility : 'visible',
-      });
-    });
-    $( '#backface' ).on( 'click', function( e ) {
-      $( '#backface' ).css({
-        visibility : 'hidden',
-      });
-      $( '#frontface' ).css({
-        visibility : 'visible',
-      });
+    $( '#face' ).on( 'click', function( e ) {
+      hmi.showFront = ! hmi.showFront;
+      hmi.update();
     });
 });
+
+function update() {
+  hmi.update();
+}
 
 $(document).ready( function() {
   hmi = new Hmi();
   var $window = $(window);
-  $window.resize( function() {
-    hmi.update();
-  });
+  $window.resize( update );
   $window.resize();
-  $( 'input' ).change( function() { hmi.update(); }).change();
-  $( 'select' ).change( function() { hmi.update(); }).change();
+  $( 'input' ).change( update ).change();
+  $( 'select' ).change( update ).change();
 });
