@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v0.1
+# v0.2
 css/index.css
 img/icons/cc_by_nc_sa.png
 img/icons/favicon.ico
@@ -38,6 +38,23 @@ img/set1/frontface-s.svg
 img/set1/frontface-xl.svg
 img/set1/frontface-xs.svg
 img/set1/frontface-xxl.svg
+img/set2/frontface-0.svg
+img/set2/frontface-1.svg
+img/set2/frontface-100.svg
+img/set2/frontface-13.svg
+img/set2/frontface-2.svg
+img/set2/frontface-20.svg
+img/set2/frontface-21.svg
+img/set2/frontface-3.svg
+img/set2/frontface-34.svg
+img/set2/frontface-40.svg
+img/set2/frontface-5.svg
+img/set2/frontface-55.svg
+img/set2/frontface-8.svg
+img/set2/frontface-89.svg
+img/set2/frontface-frac12.svg
+img/set2/frontface-inf.svg
+img/set2/frontface-questionmark.svg
 js/hmi.js
 thirdparty/jquery-1.11.1.js
 thirdparty/jquery-favicon.ico

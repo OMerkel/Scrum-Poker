@@ -28,11 +28,18 @@ Hmi.prototype.updateCard = function() {
 
 Hmi.prototype.update = function() {
   var deckType = $('#deckselect').val();
+  var cardValue =
+    'normal' == deckType ? $( 'input:radio[name=normal]:checked' ).val() :
+    'normal2' == deckType ? $( 'input:radio[name=normal]:checked' ).val() :
+    'fibonacci' == deckType ? $( 'input:radio[name=fibonacci]:checked' ).val() :
+    'fibonacci2' == deckType ? $( 'input:radio[name=fibonacci]:checked' ).val() :
+    $( 'input:radio[name=t-shirt]:checked' ).val();
+  var faceType =  'break' != cardValue && (
+    'normal2' == deckType || 'fibonacci2' == deckType ) ?
+    'double' : 'single';
   var cardUrl =
-    this.showFront ? 'url(img/set1/frontface-' + (
-      'normal' == deckType ? $( 'input:radio[name=normal]:checked' ).val() :
-      'fibonacci' == deckType ? $( 'input:radio[name=fibonacci]:checked' ).val() :
-      $( 'input:radio[name=t-shirt]:checked' ).val() ) + '.svg)' :
+    this.showFront ? 'url(img/set' + ( 'single' == faceType ? '1' : '2' ) + 
+    '/frontface-' + cardValue + '.svg)' :
     'url(img/set1/backface.svg)';
   this.updateCard();
   $('#face').css({ 'background-image' : cardUrl });
@@ -43,8 +50,9 @@ $( document ).on( "pagecreate", "#cardface", function() {
         if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
             if ( e.type === "swipeleft" ) {
               var deckType = $('#deckselect').val();
-              var targetPage = 'normal' == deckType ? 'faces-normal' :
-                'fibonacci' == deckType ? 'faces-fibonacci' :
+              var targetPage =
+                'normal' == deckType || 'normal2' == deckType ? 'faces-normal' :
+                'fibonacci' == deckType || 'fibonacci2' == deckType ? 'faces-fibonacci' :
                 'faces-t-shirt';
               $.mobile.changePage( '#' + targetPage,
                 { transition: "slide",
