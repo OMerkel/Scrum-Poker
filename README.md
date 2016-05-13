@@ -3,10 +3,10 @@
 
 Scrum Planning Poker supporting application for various Mobile Operating Systems, Tablets, and Desktop
 
-* _Start an online_ __Scrum Poker__ _session on_ http://omerkel.github.io/Scrum-Poker/html5/src/
+* _Start an online_ __Scrum Poker__ _session on_ http://omerkel.github.io/Scrum-Poker/html5/src
 * _also published in_ <a href='https://marketplace.firefox.com/app/scrumpoker'><img alt='Firefox Marketplace' src='res/marketplace_logo.png' width='128' /></a>
 
-__Keywords__ _SCRUM process framework_, _Scrum Poker Cards_, _Planning Poker Card Sets_, _estimation_, _complexity_, _agile_, _FirefoxOS_, _iOS (iPad / iPod)_, _Android_, _Windows Phone_, _Linux_, _Desktop support_, _offline.appcache_
+__Keywords__ _SCRUM process framework_, _Scrum Poker Cards_, _Planning Poker Card Sets_, _estimation_, _complexity_, _agile_, _FirefoxOS_, _iOS (iPad / iPod)_, _Android_, _Windows Phone_, _Linux_, _Desktop support_
 
 Abstract
 --------
