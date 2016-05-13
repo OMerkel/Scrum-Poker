@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html manifest="offline.appcache">
-<head profile="http://dublincore.org/documents/dcq-html/">
-  <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon" />
-  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
-  <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta charset="UTF-8" />
-  <meta name="AUTHOR" content="Oliver Merkel" />
-  <meta name="COPYRIGHT" content="Oliver Merkel" />
-  <meta name="DC.creator" content="Oliver Merkel" />
-  <meta name="DC.contributor" content="Oliver Merkel" />
-  <meta name="DC.rights" content="
+<html>
+<head profile='http://dublincore.org/documents/dcq-html/'>
+  <link rel='icon' href='img/icons/favicon.ico' type='image/x-icon' />
+  <link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' />
+  <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' />
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta charset='UTF-8' />
+  <meta name='AUTHOR' content='Oliver Merkel' />
+  <meta name='COPYRIGHT' content='Oliver Merkel' />
+  <meta name='DC.creator' content='Oliver Merkel' />
+  <meta name='DC.contributor' content='Oliver Merkel' />
+  <meta name='DC.rights' content="
 See file named LICENSE being part of the repository.
 
-Copyright (c) 2014
+Copyright (c) 2016
 @author Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de.
 All rights reserved.
 
@@ -23,7 +23,7 @@ All source code also including code parts written in HMTL, Javascript, CSS is un
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de
+Copyright (c) 2016 Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the &quot;Software&quot;), to deal in
@@ -47,15 +47,15 @@ If not otherwise stated all graphics (independent of its format) are licensed un
     Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 " />
   <title>Scrum Poker</title>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <link rel="apple-touch-icon" href="img/icons/scrumpoker-128.png" />
+  <meta name='apple-mobile-web-app-capable' content='yes' />
+  <meta name='apple-mobile-web-app-status-bar-style' content='black' />
+  <link rel='apple-touch-icon' href='img/icons/scrumpoker128.png' />
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
     name='viewport' />
-  <link rel='stylesheet' type='text/css' href='thirdparty/jquery.mobile-1.4.3/jquery.mobile-1.4.3.css' />
+  <link rel='stylesheet' type='text/css' href='thirdparty/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css' />
   <link rel='stylesheet' type='text/css' href='css/index.css' />
-  <script src='thirdparty/jquery-1.11.1.js' type='text/javascript'></script>
-  <script src='thirdparty/jquery.mobile-1.4.3/jquery.mobile-1.4.3.js' type='text/javascript'></script>
+  <script src='thirdparty/jquery-2.1.4.js' type='text/javascript'></script>
+  <script src='thirdparty/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js' type='text/javascript'></script>
   <script src='js/hmi.js' type='text/javascript' defer></script>
 </head>
 <body>
@@ -83,12 +83,12 @@ If not otherwise stated all graphics (independent of its format) are licensed un
       <li data-role='list-divider'>&nbsp;</li>
       <li><a href='#'>Card Deck Type</a></li>
       <div>
-        <select id="deckselect" data-shadow="false" data-mini="true">
-          <option value="normal">Normal</option>
-          <option value="normal2">Normal - Double Face</option>
-          <option value="fibonacci">Fibonacci</option>
-          <option value="fibonacci2">Fibonacci - Double Face</option>
-          <option value="t-shirt">T-Shirt</option>
+        <select id='deckselect' data-shadow='false' data-mini='true'>
+          <option value='normal'>Normal</option>
+          <option value='normal2'>Normal - Double Face</option>
+          <option value='fibonacci'>Fibonacci</option>
+          <option value='fibonacci2'>Fibonacci - Double Face</option>
+          <option value='t-shirt'>T-Shirt</option>
         </select>
       </div>
       <li data-icon='action' ><a href='#rules-page' data-rel='page'
@@ -140,64 +140,64 @@ If not otherwise stated all graphics (independent of its format) are licensed un
   </div><!-- /header -->
   <div role='main' class='ui-content'>
     <form>
-    <fieldset data-role="controlgroup">
+    <fieldset data-role='controlgroup'>
         <legend>Card Values:</legend>
-        <div class="ui-grid-b">
-        <div class="ui-block-a">
-          <input name="normal" id="normal-0" value="0" type="radio">
-          <label for="normal-0">0</label>
+        <div class='ui-grid-b'>
+        <div class='ui-block-a'>
+          <input name='normal' id='normal-0' value='0' type='radio'>
+          <label for='normal-0'>0</label>
         </div>
-        <div class="ui-block-b">
-          <input name="normal" id="normal-5" value="5" type="radio">
-          <label for="normal-5">5</label>
+        <div class='ui-block-b'>
+          <input name='normal' id='normal-5' value='5' type='radio'>
+          <label for='normal-5'>5</label>
         </div>
-        <div class="ui-block-c">
-          <input name="normal" id="normal-100" value="100" type="radio">
-          <label for="normal-100">100</label>
+        <div class='ui-block-c'>
+          <input name='normal' id='normal-100' value='100' type='radio'>
+          <label for='normal-100'>100</label>
         </div>
-        <div class="ui-block-a">
-          <input name="normal" id="normal-frac12" value="frac12" type="radio">
-          <label for="normal-frac12">&frac12;</label>
+        <div class='ui-block-a'>
+          <input name='normal' id='normal-frac12' value='frac12' type='radio'>
+          <label for='normal-frac12'>&frac12;</label>
         </div>
-        <div class="ui-block-b">
-          <input name="normal" id="normal-8" value="8" type="radio">
-          <label for="normal-8">8</label>
+        <div class='ui-block-b'>
+          <input name='normal' id='normal-8' value='8' type='radio'>
+          <label for='normal-8'>8</label>
         </div>
-        <div class="ui-block-c">
-          <input name="normal" id="normal-inf" value="inf" type="radio">
-          <label for="normal-inf">&infin;</label>
+        <div class='ui-block-c'>
+          <input name='normal' id='normal-inf' value='inf' type='radio'>
+          <label for='normal-inf'>&infin;</label>
         </div>
-        <div class="ui-block-a">
-          <input name="normal" id="normal-1" value="1" checked="checked" type="radio">
-          <label for="normal-1">1</label>
+        <div class='ui-block-a'>
+          <input name='normal' id='normal-1' value='1' checked='checked' type='radio'>
+          <label for='normal-1'>1</label>
         </div>
-        <div class="ui-block-b">
-          <input name="normal" id="normal-13" value="13" type="radio">
-          <label for="normal-13">13</label>
+        <div class='ui-block-b'>
+          <input name='normal' id='normal-13' value='13' type='radio'>
+          <label for='normal-13'>13</label>
         </div>
-        <div class="ui-block-c">
-          <input name="normal" id="normal-questionmark" value="questionmark" type="radio">
-          <label for="normal-questionmark">?</label>
+        <div class='ui-block-c'>
+          <input name='normal' id='normal-questionmark' value='questionmark' type='radio'>
+          <label for='normal-questionmark'>?</label>
         </div>
-        <div class="ui-block-a">
-          <input name="normal" id="normal-2" value="2" type="radio">
-          <label for="normal-2">2</label>
+        <div class='ui-block-a'>
+          <input name='normal' id='normal-2' value='2' type='radio'>
+          <label for='normal-2'>2</label>
         </div>
-        <div class="ui-block-b">
-          <input name="normal" id="normal-20" value="20" type="radio">
-          <label for="normal-20">20</label>
+        <div class='ui-block-b'>
+          <input name='normal' id='normal-20' value='20' type='radio'>
+          <label for='normal-20'>20</label>
         </div>
-        <div class="ui-block-c">
-          <input name="normal" id="normal-break" value="break" type="radio">
-          <label for="normal-break">Mug</label>
+        <div class='ui-block-c'>
+          <input name='normal' id='normal-break' value='break' type='radio'>
+          <label for='normal-break'>Mug</label>
         </div>
-        <div class="ui-block-a">
-          <input name="normal" id="normal-3" value="3" type="radio">
-          <label for="normal-3">3</label>
+        <div class='ui-block-a'>
+          <input name='normal' id='normal-3' value='3' type='radio'>
+          <label for='normal-3'>3</label>
         </div>
-        <div class="ui-block-b">
-          <input name="normal" id="normal-40" value="40" type="radio">
-          <label for="normal-40">40</label>
+        <div class='ui-block-b'>
+          <input name='normal' id='normal-40' value='40' type='radio'>
+          <label for='normal-40'>40</label>
         </div>
         </div>
     </fieldset>
@@ -215,68 +215,68 @@ If not otherwise stated all graphics (independent of its format) are licensed un
   </div><!-- /header -->
   <div role='main' class='ui-content'>
     <form>
-    <fieldset data-role="controlgroup">
+    <fieldset data-role='controlgroup'>
         <legend>Card Values:</legend>
-        <div class="ui-grid-b">
-        <div class="ui-block-a">
-          <input name="fibonacci" id="fibonacci-0" value="0" type="radio">
-          <label for="fibonacci-0">0</label>
+        <div class='ui-grid-b'>
+        <div class='ui-block-a'>
+          <input name='fibonacci' id='fibonacci-0' value='0' type='radio'>
+          <label for='fibonacci-0'>0</label>
         </div>
-        <div class="ui-block-b">
-          <input name="fibonacci" id="fibonacci-5" value="5" type="radio">
-          <label for="fibonacci-5">5</label>
+        <div class='ui-block-b'>
+          <input name='fibonacci' id='fibonacci-5' value='5' type='radio'>
+          <label for='fibonacci-5'>5</label>
         </div>
-        <div class="ui-block-c">
-          <input name="fibonacci" id="fibonacci-55" value="55" type="radio">
-          <label for="fibonacci-55">55</label>
+        <div class='ui-block-c'>
+          <input name='fibonacci' id='fibonacci-55' value='55' type='radio'>
+          <label for='fibonacci-55'>55</label>
         </div>
-        <div class="ui-block-a">
-          <input name="fibonacci" id="fibonacci-frac12" value="frac12" type="radio">
-          <label for="fibonacci-frac12">&frac12;</label>
+        <div class='ui-block-a'>
+          <input name='fibonacci' id='fibonacci-frac12' value='frac12' type='radio'>
+          <label for='fibonacci-frac12'>&frac12;</label>
         </div>
-        <div class="ui-block-b">
-          <input name="fibonacci" id="fibonacci-8" value="8" type="radio">
-          <label for="fibonacci-8">8</label>
+        <div class='ui-block-b'>
+          <input name='fibonacci' id='fibonacci-8' value='8' type='radio'>
+          <label for='fibonacci-8'>8</label>
         </div>
-        <div class="ui-block-c">
-          <input name="fibonacci" id="fibonacci-89" value="89" type="radio">
-          <label for="fibonacci-89">89</label>
+        <div class='ui-block-c'>
+          <input name='fibonacci' id='fibonacci-89' value='89' type='radio'>
+          <label for='fibonacci-89'>89</label>
         </div>
-        <div class="ui-block-a">
-          <input name="fibonacci" id="fibonacci-1" value="1" checked="checked" type="radio">
-          <label for="fibonacci-1">1</label>
+        <div class='ui-block-a'>
+          <input name='fibonacci' id='fibonacci-1' value='1' checked='checked' type='radio'>
+          <label for='fibonacci-1'>1</label>
         </div>
-        <div class="ui-block-b">
-          <input name="fibonacci" id="fibonacci-13" value="13" type="radio">
-          <label for="fibonacci-13">13</label>
+        <div class='ui-block-b'>
+          <input name='fibonacci' id='fibonacci-13' value='13' type='radio'>
+          <label for='fibonacci-13'>13</label>
         </div>
-        <div class="ui-block-c">
-          <input name="fibonacci" id="fibonacci-inf" value="inf" type="radio">
-          <label for="fibonacci-inf">&infin;</label>
+        <div class='ui-block-c'>
+          <input name='fibonacci' id='fibonacci-inf' value='inf' type='radio'>
+          <label for='fibonacci-inf'>&infin;</label>
         </div>
-        <div class="ui-block-a">
-          <input name="fibonacci" id="fibonacci-2" value="2" type="radio">
-          <label for="fibonacci-2">2</label>
+        <div class='ui-block-a'>
+          <input name='fibonacci' id='fibonacci-2' value='2' type='radio'>
+          <label for='fibonacci-2'>2</label>
         </div>
-        <div class="ui-block-b">
-          <input name="fibonacci" id="fibonacci-21" value="21" type="radio">
-          <label for="fibonacci-21">21</label>
+        <div class='ui-block-b'>
+          <input name='fibonacci' id='fibonacci-21' value='21' type='radio'>
+          <label for='fibonacci-21'>21</label>
         </div>
-        <div class="ui-block-c">
-          <input name="fibonacci" id="fibonacci-questionmark" value="questionmark" type="radio">
-          <label for="fibonacci-questionmark">?</label>
+        <div class='ui-block-c'>
+          <input name='fibonacci' id='fibonacci-questionmark' value='questionmark' type='radio'>
+          <label for='fibonacci-questionmark'>?</label>
         </div>
-        <div class="ui-block-a">
-          <input name="fibonacci" id="fibonacci-3" value="3" type="radio">
-          <label for="fibonacci-3">3</label>
+        <div class='ui-block-a'>
+          <input name='fibonacci' id='fibonacci-3' value='3' type='radio'>
+          <label for='fibonacci-3'>3</label>
         </div>
-        <div class="ui-block-b">
-          <input name="fibonacci" id="fibonacci-34" value="34" type="radio">
-          <label for="fibonacci-34">34</label>
+        <div class='ui-block-b'>
+          <input name='fibonacci' id='fibonacci-34' value='34' type='radio'>
+          <label for='fibonacci-34'>34</label>
         </div>
-        <div class="ui-block-c">
-          <input name="fibonacci" id="fibonacci-break" value="break" type="radio">
-          <label for="fibonacci-break">Mug</label>
+        <div class='ui-block-c'>
+          <input name='fibonacci' id='fibonacci-break' value='break' type='radio'>
+          <label for='fibonacci-break'>Mug</label>
         </div>
         </div>
     </fieldset>
@@ -294,44 +294,44 @@ If not otherwise stated all graphics (independent of its format) are licensed un
   </div><!-- /header -->
   <div role='main' class='ui-content'>
     <form>
-    <fieldset data-role="controlgroup">
+    <fieldset data-role='controlgroup'>
         <legend>Card Values:</legend>
-        <div class="ui-grid-b">
-        <div class="ui-block-a">
-          <input name="t-shirt" id="t-shirt-xs" value="xs" type="radio">
-          <label for="t-shirt-xs">XS</label>
+        <div class='ui-grid-b'>
+        <div class='ui-block-a'>
+          <input name='t-shirt' id='t-shirt-xs' value='xs' type='radio'>
+          <label for='t-shirt-xs'>XS</label>
         </div>
-        <div class="ui-block-b">
-          <input name="t-shirt" id="t-shirt-s" value="s" type="radio">
-          <label for="t-shirt-s">S</label>
+        <div class='ui-block-b'>
+          <input name='t-shirt' id='t-shirt-s' value='s' type='radio'>
+          <label for='t-shirt-s'>S</label>
         </div>
-        <div class="ui-block-c">
-          <input name="t-shirt" id="t-shirt-m" value="m" checked="checked" type="radio">
-          <label for="t-shirt-m">M</label>
+        <div class='ui-block-c'>
+          <input name='t-shirt' id='t-shirt-m' value='m' checked='checked' type='radio'>
+          <label for='t-shirt-m'>M</label>
         </div>
-        <div class="ui-block-a">
-          <input name="t-shirt" id="t-shirt-l" value="l" type="radio">
-          <label for="t-shirt-l">L</label>
+        <div class='ui-block-a'>
+          <input name='t-shirt' id='t-shirt-l' value='l' type='radio'>
+          <label for='t-shirt-l'>L</label>
         </div>
-        <div class="ui-block-b">
-          <input name="t-shirt" id="t-shirt-xl" value="xl" type="radio">
-          <label for="t-shirt-xl">XL</label>
+        <div class='ui-block-b'>
+          <input name='t-shirt' id='t-shirt-xl' value='xl' type='radio'>
+          <label for='t-shirt-xl'>XL</label>
         </div>
-        <div class="ui-block-c">
-          <input name="t-shirt" id="t-shirt-xxl" value="xxl" type="radio">
-          <label for="t-shirt-xxl">XXL</label>
+        <div class='ui-block-c'>
+          <input name='t-shirt' id='t-shirt-xxl' value='xxl' type='radio'>
+          <label for='t-shirt-xxl'>XXL</label>
         </div>
-        <div class="ui-block-a">
-          <input name="t-shirt" id="t-shirt-inf" value="inf" type="radio">
-          <label for="t-shirt-inf">&infin;</label>
+        <div class='ui-block-a'>
+          <input name='t-shirt' id='t-shirt-inf' value='inf' type='radio'>
+          <label for='t-shirt-inf'>&infin;</label>
         </div>
-        <div class="ui-block-b">
-          <input name="t-shirt" id="t-shirt-questionmark" value="questionmark" type="radio">
-          <label for="t-shirt-questionmark">?</label>
+        <div class='ui-block-b'>
+          <input name='t-shirt' id='t-shirt-questionmark' value='questionmark' type='radio'>
+          <label for='t-shirt-questionmark'>?</label>
         </div>
-        <div class="ui-block-c">
-          <input name="t-shirt" id="t-shirt-break" value="break" type="radio">
-          <label for="t-shirt-break">Mug</label>
+        <div class='ui-block-c'>
+          <input name='t-shirt' id='t-shirt-break' value='break' type='radio'>
+          <label for='t-shirt-break'>Mug</label>
         </div>
         </div>
     </fieldset>
@@ -355,13 +355,13 @@ If not otherwise stated all graphics (independent of its format) are licensed un
         href='http://creativecommons.org/licenses/by-nc-nd/4.0/'
         target='_blank'>cc-by-nc-nd 4.0</a>.</figcaption>
     </figure>
-    <p>Copyright (c) 2014<br />
+    <p>Copyright (c) 2016<br />
     <em>@author</em> Oliver Merkel, Merkel(dot) Oliver(at) web(dot) de.<br />
     All rights reserved.<br />
     Logos and trademarks belong to their respective owners.</p>
     <p>All source code also including code parts written in HMTL, Javascript, CSS is under MIT License.</p>
     <h4>The MIT License (MIT)</h4>
-    <p>Copyright (c) 2014 Oliver Merkel, Merkel(dot) Oliver(at) web(dot)de</p>
+    <p>Copyright (c) 2016 Oliver Merkel, Merkel(dot) Oliver(at) web(dot)de</p>
 
     <p>Permission is hereby granted, free of charge, to any person obtaining a copy of
     this software and associated documentation files (the &quot;Software&quot;), to deal in
@@ -381,16 +381,16 @@ If not otherwise stated all graphics (independent of its format) are licensed un
     CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 
     <p>If not otherwise stated all graphics (independent of its format) are licensed under
-      <br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"
-      target="_blank"><img alt="Creative Commons License" style="border-width:0"
-      src="img/icons/cc_by_nc_sa.png" /></a><br />Images are licensed under a
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"
-      target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+      <br /><a rel='license' href='http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US'
+      target='_blank'><img alt='Creative Commons License' style='border-width:0'
+      src='img/icons/cc_by_nc_sa.png' /></a><br />Images are licensed under a
+      <a rel='license' href='http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US'
+      target='_blank'>Creative Commons Attribution-NonCommercial-ShareAlike 4.0
       International License</a>.
     </p>
-    <div data-role="collapsible-set" data-theme="c" data-content-theme="d"
-      data-iconpos="right" data-collapsed-icon="arrow-l" data-expanded-icon="arrow-d">
-    <div data-role="collapsible">
+    <div data-role='collapsible-set' data-theme='c' data-content-theme='d'
+      data-iconpos='right' data-collapsed-icon='arrow-l' data-expanded-icon='arrow-d'>
+    <div data-role='collapsible'>
       <h4>Third Party Code Licenses</h4>
       <p>This <b>Scrum Poker</b> implementation uses unmodified independent code
       libraries provided by <em>third parties</em>.
@@ -400,15 +400,15 @@ If not otherwise stated all graphics (independent of its format) are licensed un
       any related list of conditions, disclaimers, and especially
       the copyright holders and authors of the corresponding third
       party functionality.</p>
-      <a href="https://github.com/jquery/jquery" data-role="button" data-theme="c"
-        rel="external" target="_blank" type="text/html"
-        title="jQuery - Repository">
-        <img src="thirdparty/jquery-favicon.ico" />
+      <a href='https://github.com/jquery/jquery' data-role='button' data-theme='c'
+        rel='external' target='_blank' type='text/html'
+        title='jQuery - Repository'>
+        <img src='thirdparty/jquery-favicon.ico' width='16' height='16' />
         jQuery: MIT</a>
-      <a href="https://github.com/jquery/jquery-mobile" data-role="button" data-theme="c"
-        rel="external" target="_blank" type="text/html"
-        title="jQuery Mobile - Repository">
-        <img src="thirdparty/jquery.mobile-1.4.3/demos/favicon.ico" />
+      <a href='https://github.com/jquery/jquery-mobile' data-role='button' data-theme='c'
+        rel='external' target='_blank' type='text/html'
+        title='jQuery Mobile - Repository'>
+        <img src='thirdparty/jquery.mobile-1.4.5/demos/favicon.ico' width='16' height='16' />
         jQuery Mobile: MIT</a>
     </div><!-- collapsible -->
     </div><!-- collapsible-set -->

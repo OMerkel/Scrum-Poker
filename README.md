@@ -1,4 +1,4 @@
-<img alt="Scrum Planning Poker Cards" width="64" src="html5/src/img/icons/scrumpoker-64.png" /> Scrum Poker
+<img alt="Scrum Planning Poker Cards" width="64" src="html5/src/img/icons/scrumpoker64.png" /> Scrum Poker
 ====================
 
 Scrum Planning Poker supporting application for various Mobile Operating Systems, Tablets, and Desktop
