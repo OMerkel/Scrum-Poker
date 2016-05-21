@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2014 Oliver Merkel
+// Copyright (c) 2016 Oliver Merkel
 // All rights reserved.
 //
 // @author Oliver Merkel, <Merkel(dot)Oliver(at)web(dot)de>
@@ -27,7 +27,7 @@ Hmi.prototype.updateCard = function() {
 };
 
 Hmi.prototype.update = function() {
-  var deckType = $('#deckselect').val();
+  var deckType = $('input:radio[name=deckselect]:checked').val();
   var cardValue =
     'normal' == deckType ? $( 'input:radio[name=normal]:checked' ).val() :
     'normal2' == deckType ? $( 'input:radio[name=normal]:checked' ).val() :
@@ -45,37 +45,34 @@ Hmi.prototype.update = function() {
   $('#face').css({ 'background-image' : cardUrl });
 };
 
-$( document ).on( "pagecreate", "#cardface", function() {
-    $( document ).on( "swipeleft swiperight", "#cardface", function( e ) {
-        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
-            if ( e.type === "swipeleft" ) {
-              var deckType = $('#deckselect').val();
-              var targetPage =
-                'normal' == deckType || 'normal2' == deckType ? 'faces-normal' :
-                'fibonacci' == deckType || 'fibonacci2' == deckType ? 'faces-fibonacci' :
-                'faces-t-shirt';
-              $.mobile.changePage( '#' + targetPage,
-                { transition: "slide",
-                  reverse: false,
-                  changeHash: false });
-            } else if ( e.type === "swiperight" ) {
-                $( "#left-panel" ).panel( "open" );
-            }
-        }
+function selectCardFace( e ) {
+  var deckType = $('input:radio[name=deckselect]:checked').val();
+  var targetPage =
+    'normal' == deckType || 'normal2' == deckType ? 'faces-normal' :
+    'fibonacci' == deckType || 'fibonacci2' == deckType ? 'faces-fibonacci' :
+    'faces-t-shirt';
+  $.mobile.changePage( '#' + targetPage,
+    { transition: "slide", reverse: false, changeHash: true });
+}
+
+function openMenu( e ) { $( '#left-panel' ).panel( 'open' ); }
+
+$( document ).on( 'pagecreate', '#cardface', function() {
+  $( document ).on( 'swiperight', '#cardface', openMenu);
+  $( document ).on( 'click', '.prev', openMenu);
+  $( document ).on( 'click', '.next', selectCardFace);
+  $( document ).on( 'swipeleft', '#cardface', selectCardFace);
+  var pages = [ 'faces-normal', 'faces-fibonacci', 'faces-t-shirt' ];
+  for(var i=0; i<pages.length; ++i) {
+    $( document ).on( 'swiperight', '#' + pages[i], function( e ) {
+      $.mobile.changePage( '#cardface',
+        { transition: 'slide', reverse: true, changeHash: false });
     });
-    var pages = [ 'faces-normal', 'faces-fibonacci', 'faces-t-shirt' ];
-    for(var i=0; i<pages.length; ++i) {
-      $( document ).on( 'swiperight', '#' + pages[i], function( e ) {
-        $.mobile.changePage( "#cardface",
-          { transition: "slide",
-            reverse: true,
-            changeHash: false });
-      });
-    }
-    $( '#face' ).on( 'click', function( e ) {
-      hmi.showFront = ! hmi.showFront;
-      hmi.update();
-    });
+  }
+  $( '#face' ).on( 'click', function( e ) {
+    hmi.showFront = ! hmi.showFront;
+    hmi.update();
+  });
 });
 
 function update() {
@@ -88,5 +85,4 @@ $(document).ready( function() {
   $window.resize( update );
   $window.resize();
   $( 'input' ).change( update ).change();
-  $( 'select' ).change( update ).change();
 });

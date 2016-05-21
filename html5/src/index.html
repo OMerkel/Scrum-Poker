@@ -62,18 +62,24 @@ If not otherwise stated all graphics (independent of its format) are licensed un
 
 <div data-role='page' data-theme='b' id='cardface'
   class='mybackground'>
-      <div id='face' style='border-width: 0.2em;
-        border-color: #555;
-        background: url(img/set1/frontface-1.svg);
-        background-size: contain;
-        border-style: none;
-        border-radius: 40px;
-        padding: 5px;
-        position: absolute; top: 2px;
-        width: 90%;
-        height: 400px;
-        box-shadow: 20px 20px 30px 15px #000;'>
-      </div>
+  <div id='face' style='border-width: 0.2em;
+    border-color: #555;
+    background: url(img/set1/frontface-1.svg);
+    background-size: contain;
+    border-style: none;
+    border-radius: 40px;
+    padding: 5px;
+    position: absolute; top: 2px;
+    width: 90%;
+    height: 400px;
+    box-shadow: 20px 20px 30px 15px #000;'>
+  </div>
+
+  <div data-role="controlgroup" class="control ui-btn-left"
+    data-type="horizontal" data-mini="true">
+    <a href="#" class="prev ui-btn ui-btn-icon-notext ui-icon-carat-l">Previous</a>
+    <a href="#" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r">Next</a>
+  </div>
 
   <div data-role='panel' id='left-panel' data-position='left'
     data-display='overlay' data-theme='b'>
@@ -81,16 +87,21 @@ If not otherwise stated all graphics (independent of its format) are licensed un
       data-icon='false' data-global-nav='demos' class='jqm-list'>
       <li data-icon='back' data-rel='close'><a href='#'>Back</a></li>
       <li data-role='list-divider'>&nbsp;</li>
-      <li><a href='#'>Card Deck Type</a></li>
-      <div>
-        <select id='deckselect' data-shadow='false' data-mini='true'>
-          <option value='normal'>Normal</option>
-          <option value='normal2'>Normal - Double Face</option>
-          <option value='fibonacci'>Fibonacci</option>
-          <option value='fibonacci2'>Fibonacci - Double Face</option>
-          <option value='t-shirt'>T-Shirt</option>
-        </select>
-      </div>
+      <form>
+        <fieldset data-role="controlgroup">
+          <legend>Card Deck Type</legend>
+          <input name='deckselect' id='normal' value='normal' checked='checked' type='radio' />
+          <label for='normal'>Normal</label>
+          <input name='deckselect' id='normal2' value='normal2' type='radio' />
+          <label for='normal2'>Normal - Double Face</label>
+          <input name='deckselect' id='fibonacci' value='fibonacci' type='radio' />
+          <label for='fibonacci'>Fibonacci</label>
+          <input name='deckselect' id='fibonacci2' value='fibonacci2' type='radio' />
+          <label for='fibonacci2'>Fibonacci - Double Face</label>
+          <input name='deckselect' id='t-shirt' value='t-shirt' type='radio' />
+          <label for='t-shirt'>T-Shirt</label>
+        </fieldset>
+      </form>
       <li data-icon='action' ><a href='#rules-page' data-rel='page'
         data-transition='pop'>Info&#8230;</a></li>
       <li data-icon='info' ><a href='#about-page' data-rel='page'
