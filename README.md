@@ -26,9 +26,9 @@ Abstract
   <em>Tasks</em>. It can be used as a replacement for physical <em>SCRUM Planning Poker</em>
   card sets.</p>
   
-| <img src="res/cardview.png" alt="The standard card view" width="100%" /> | <img src="res/cardview_swipe_right.png" alt="Swiping right to get to..." width="100%" /> | <img src="res/swiperight-mainmenu.png" alt="... the Main menu" width="100%" /> | <img src="res/decktypes.png" alt="Select Deck Type" width="100%" /> |
-| --- | --- | --- | --- |
-| _The standard card view_ | _Swiping right to get to..._ | _... the Main menu_ | _Select Deck Type_ |
+| <img src="res/cardview.png" alt="The standard card view" width="100%" /> | <img src="res/cardview_swipe_right.png" alt="Swiping right to get to..." width="100%" /> | <img src="res/swiperight-mainmenu.png" alt="... the Main menu" width="100%" /> |
+| --- | --- | --- |
+| _The standard card view_ | _Swiping right to get to..._ | _... the Main menu, select Deck Type_ |
 
 | <img src="res/cardview_swipe_left.png" alt="Swiping left to get to..." width="100%" /> | <img src="res/cardvalues-normal.png" alt="... choose a card value" width="100%" /> | <img src="res/cardbackface.png" alt="Click card to toggle front and back face" width="100%" /> | <img src="res/ineedabreakandmorecoffee.png" alt="Indicating a break and more coffee is appreciated" width="100%" /> |
 | --- | --- | --- | --- |
