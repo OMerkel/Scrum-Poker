@@ -4,15 +4,15 @@
   "description": "Scrum Planning Poker",
   "launch_path": "/Scrum-Poker/html5/src/index.html",
   "icons": {
-    "16": "/img/icons/scrumpoker16.png",
-    "32": "/img/icons/scrumpoker32.png",
-    "48": "/img/icons/scrumpoker48.png",
-    "60": "/img/icons/scrumpoker60.png",
-    "64": "/img/icons/scrumpoker64.png",
-    "90": "/img/icons/scrumpoker90.png",
-    "120": "/img/icons/scrumpoker120.png",
-    "128": "/img/icons/scrumpoker128.png",
-    "256": "/img/icons/scrumpoker256.png"
+    "16": "/Scrum-Poker/html5/src/img/icons/scrumpoker16.png",
+    "32": "/Scrum-Poker/html5/src/img/icons/scrumpoker32.png",
+    "48": "/Scrum-Poker/html5/src/img/icons/scrumpoker48.png",
+    "60": "/Scrum-Poker/html5/src/img/icons/scrumpoker60.png",
+    "64": "/Scrum-Poker/html5/src/img/icons/scrumpoker64.png",
+    "90": "/Scrum-Poker/html5/src/img/icons/scrumpoker90.png",
+    "120": "/Scrum-Poker/html5/src/img/icons/scrumpoker120.png",
+    "128": "/Scrum-Poker/html5/src/img/icons/scrumpoker128.png",
+    "256": "/Scrum-Poker/html5/src/img/icons/scrumpoker256.png"
   },
   "developer": {
     "name": "Oliver Merkel",
